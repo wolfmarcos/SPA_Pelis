@@ -26,12 +26,12 @@ export const crearPelis =async(tf)=>{
         
             console.log("titulossss: ",untf.titulo);
             let div22 = document.createElement('div');
-            div22.id = untf.id;
+             div22.id = untf.id;
            div22.className = 'contenedor';
          
            div22.innerHTML=`
       
-           <a >
+           <a href="#/descripcion/${untf.titulo}">
            <div class="tarjeta">
                <div class="imgC">
                    <img class="img"  id="img2"  src=" ${untf.poster}" alt="">

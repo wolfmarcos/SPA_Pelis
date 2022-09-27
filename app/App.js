@@ -1,9 +1,10 @@
-import { funcionBuscarPeli } from "./components/Buscador.js";
-
+// import { funcionBuscarPeli } from "./components/Buscador.js";
+// import { crearPelis } from "./components/render.js";
 import { Headers } from "./components/Header.js";
 import { Main } from "./components/Main.js";
 import { Nav } from "./components/Nav.js";
-import { crearPelis } from "./components/render.js";
+
+import { Router } from "./components/Router.js";
 import { ajax } from "./helpers/ajax.js";
 import url from "./helpers/urls.js";
 
@@ -15,12 +16,9 @@ export const App = async () => {
         docu.append(Main());
 
 
-        let Objetos = await ajax(url)
-
-        crearPelis(Objetos)
-
-        funcionBuscarPeli(Objetos)
-
+        let objeto = await ajax(url)
+        
+        Router(objeto)
 }
 
 

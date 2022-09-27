@@ -1,21 +1,27 @@
-import { ajax } from "../helpers/ajax.js";
-import api from "../helpers/urls.js"
-import { ContainerCards } from "./ContainerCards.js";
+
+import { funcionBuscarPeli } from "./Buscador.js";
+import { Descrpcion } from "./Descripcion.js";
+
+import { crearPelis } from "./render.js";
 
 
-export const Router = () => {
 
-let {hash} = location;
+export const Router = (props) => {
 
+    console.log("Router:",props);
+
+    let {hash} = location;
 if (hash == "" || hash == "#/") {
     
-    ajax({
-        url: api.TODOS,
-        callback: (data) => document.querySelector("#main").append(ContainerCards(data))
-    })
+ 
+    crearPelis(props)
 
-}else if (hash == "#/buscador"){
-    document.querySelector("#main").innerHTML = "<h1> En proceso</h1>"
+    funcionBuscarPeli(props)
+
+
+}else if (hash == "#/descripcion/# "){
+   
+    document.querySelector(".content").innerHTML = Descrpcion()
 }
 console.log(hash);
 
