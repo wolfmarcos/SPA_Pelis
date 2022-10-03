@@ -12,7 +12,7 @@ console.log("🚀 ~ file: Buscador.js ~ line 9 ~ funcionBuscarPeli ~ tf", tf)
   
     }
     else{
-    console.log("BUuuuuuuusacador:   ...",pelis);
+   
     buscarPeli.addEventListener("keyup",(e)=>{
 
     let indicador=pelis.filter((untf)=> untf.titulo.toLowerCase().indexOf(e.target.value.toLowerCase())>-1 )

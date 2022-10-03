@@ -12,7 +12,7 @@ body {
 }
 
 body, input, button {
- font-size:  30px;
+ /* font-size:  30px; */
  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -23,16 +23,19 @@ body, input, button {
 border-radius: 30%;
 padding: 20px;
 margin: 1%;
+min-width: 500px;
 }
 .contForm h2 {
     /* color:aliceblue; */
     /* text-shadow:1px 1px 2px black; */
-    font: 50px sans-serif;
+    font: 30px sans-serif;
 }
 .contForm input{
     margin: 2% 24%;
 border-radius:20px;
-padding: 2px 14px;}
+padding: 2px 14px;
+
+}
 .contForm div{
     position: relative;
     /* background-color: #fff; */

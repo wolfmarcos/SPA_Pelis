@@ -1,5 +1,5 @@
 
- import {Descrpcion} from "./Descripcion.js"
+//  import {Descrpcion} from "./Descripcion.js"
 
 export const crearPelis =async(tf)=>{
 
@@ -30,8 +30,7 @@ export const crearPelis =async(tf)=>{
            div22.className = 'contenedor';
          
            div22.innerHTML=`
-      
-           <a href="#/descripcion/${untf.titulo}">
+           <a href="#/descripcion/${untf.id}">
            <div class="tarjeta">
                <div class="imgC">
                    <img class="img"  id="img2"  src=" ${untf.poster}" alt="">
@@ -62,11 +61,15 @@ export const crearPelis =async(tf)=>{
         
        
     div22.addEventListener("click",()=>{
-        Descrpcion(untf)
-        console.log("selecion",untf)});
+        // Descrpcion(untf)
+        // console.log("selecion",untf)
+        let strObjet=JSON.stringify(untf)
+        console.log(strObjet)
+        localStorage.setItem("arrayP1",strObjet)
+    });
     
           sumaPeli.append(div22)
-          document.querySelector(".content").append(sumaPeli)
+           document.querySelector(".content").append(sumaPeli)
           }
           
       

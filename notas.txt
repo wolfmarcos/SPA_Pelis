@@ -10,7 +10,7 @@ https://www.javascripttutorial.net/javascript-bom/javascript-history/
 
 
 
----------- weetalert2
+---------- sweetAlert2
 https://sweetalert2.github.io/
 
 <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">

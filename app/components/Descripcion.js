@@ -1,12 +1,12 @@
 export const Descrpcion= (untf)=>{
     console.log("Descrpcion")
-    let descripcionPeli = document.querySelector(".descipcion");
+    // let descripcionPeli = document.querySelector(".descipcion");
     // let descrp = document.createElement("div")
 
 
 
 
-let sumaPeli2= `
+let descrpciones= `
 <div class="tarjeta2">
 <header>
            
@@ -65,7 +65,8 @@ let sumaPeli2= `
    
    
 
-    descripcionPeli.innerHTML = sumaPeli2;
+    // descripcionPeli.innerHTML = 
+   return descrpciones;
    }
    
   

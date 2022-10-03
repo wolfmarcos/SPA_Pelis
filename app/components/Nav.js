@@ -1,3 +1,34 @@
+ import { Form } from "./formulario.js";
+
+
+let sa=(e)=>{
+ if (e.target.className == "reg"){
+   alert.clear
+   let a=Form()
+
+  
+    Swal.fire({
+        width: 400,
+        showCloseButton: true,
+ 
+        focusConfirm: false,
+        confirmButtonText:
+          '<i class="fa fa-thumbs-up"></i> Volver',
+        confirmButtonAriaLabel: 'Thumbs up, great!',
+       
+        cancelButtonAriaLabel: 'Thumbs down',
+        showCancelButton: true,
+        title: '<strong>Login  y <u> Registro</u></strong>',
+        icon: 'info',
+        html:(    a||" "
+        ),
+        
+        
+        
+        }) 
+    
+
+}}
 
 export const Nav= ()=>{
   
@@ -14,7 +45,7 @@ nav.innerHTML=`
                   
      
         <li>
-            <a href="./formulario.html">login/registro</a>
+            <a class="reg" >login/registro</a>
         </li>
         <li>
             <!-- <a href="#">CATEGORIAS</a>> -->
@@ -47,7 +78,7 @@ nav.innerHTML=`
                 <a href="#">CATEGORIAS</a>
             </li>
             <li>
-                <a href="./formulario.html">login/registro</a>
+                <a class="reg">reggg </a>
             </li>
         </ul>             
     </div>
@@ -55,7 +86,12 @@ nav.innerHTML=`
 <a   href="./descripcion.html?id="><div class="col-tex">
     <h2></h2> </div></a>
 </div>`;
- 
+
+nav.addEventListener("click",sa)
+
+
+
+
   return nav;
     
    }

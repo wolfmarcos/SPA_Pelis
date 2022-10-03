@@ -1,5 +1,5 @@
 export const Headers= (nav)=>{
-     console.log("holas munco")
+     console.log("Heders")
 
      let header = document.createElement("header")
 
